@@ -1,0 +1,48 @@
+{
+    "name": "jdr/mailer-bundle",
+    "type": "library",
+    "description": ":package_description",
+    "keywords": [
+        "jdr",
+        "mailer-bundle"
+    ],
+    "homepage": "https://github.com/johanderuijter/mailer-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Johan de Ruijter",
+            "email": "dev@johanderuijter.nl",
+            "homepage": "//johanderuijter.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "~7.0",
+        "symfony/symfony": "~3.0",
+        "jdr/mailer": "@dev",
+        "jdr/mailer-swift-mailer-bridge": "@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.0",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "JDR\\MailerBundle\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "JDR\\MailerBundle\\Test\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+services:
+    jdr.mailer.templating:
+        class: JDR\MailerBundle\Template\TemplatingEngine
+        arguments:
+            - "@templating"
+
+    jdr.mailer.part_resolver_registry:
+        class: JDR\Mailer\PartResolverRegistry
+        private: true
+
+    jdr.mailer.email_builder:
+        class: JDR\Mailer\EmailBuilder
+        private: true
+        arguments:
+            - "@jdr.mailer.part_resolver_registry"
+
+    jdr.mailer.swift:
+        class: JDR\MailerSwiftMailerBridge\SwiftMailer
+        private: true
+        arguments:
+            - "@mailer"
+            - "@jdr.mailer.email_builder"
+
+    jdr.mailer:
+        alias: jdr.mailer.swift

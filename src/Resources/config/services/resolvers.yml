@@ -1,0 +1,37 @@
+services:
+    jdr.mailer.resolver.recipients:
+        class: JDR\Mailer\Part\RecipientsResolver
+        private: true
+        lazy: true
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Recipients }
+
+    jdr.mailer.resolver.sender:
+        class: JDR\Mailer\Part\SenderResolver
+        private: true
+        lazy: true
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Sender }
+
+    jdr.mailer.resolver.subject:
+        class: JDR\Mailer\Part\SubjectResolver
+        private: true
+        lazy: true
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Subject }
+
+    jdr.mailer.resolver.message:
+        class: JDR\Mailer\Part\MessageResolver
+        private: true
+        lazy: true
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Message }
+
+    jdr.mailer.resolver.template:
+        class: JDR\Mailer\Part\TemplateResolver
+        private: true
+        lazy: true
+        arguments:
+            - "@jdr.mailer.templating"
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Template }
