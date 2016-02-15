@@ -1,7 +1,7 @@
 {
     "name": "jdr/mailer-bundle",
     "type": "library",
-    "description": ":package_description",
+    "description": "Bundle for jdr/mailer to provide integration with symfony",
     "keywords": [
         "jdr",
         "mailer-bundle"

@@ -58,15 +58,15 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 
 [ico-version]: https://img.shields.io/packagist/v/jdr/mailer-bundle.svg?style=flat-square
 [ico-license]: https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square
-[ico-travis]: https://img.shields.io/travis/jdr/mailer-bundle/master.svg?style=flat-square
-[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/jdr/mailer-bundle.svg?style=flat-square
-[ico-code-quality]: https://img.shields.io/scrutinizer/g/jdr/mailer-bundle.svg?style=flat-square
+[ico-travis]: https://img.shields.io/travis/johanderuijter/mailer-bundle/master.svg?style=flat-square
+[ico-scrutinizer]: https://img.shields.io/scrutinizer/coverage/g/johanderuijter/mailer-bundle.svg?style=flat-square
+[ico-code-quality]: https://img.shields.io/scrutinizer/g/johanderuijter/mailer-bundle.svg?style=flat-square
 [ico-downloads]: https://img.shields.io/packagist/dt/jdr/mailer-bundle.svg?style=flat-square
 
 [link-packagist]: https://packagist.org/packages/jdr/mailer-bundle
-[link-travis]: https://travis-ci.org/jdr/mailer-bundle
-[link-scrutinizer]: https://scrutinizer-ci.com/g/jdr/mailer-bundle/code-structure
-[link-code-quality]: https://scrutinizer-ci.com/g/jdr/mailer-bundle
+[link-travis]: https://travis-ci.org/johanderuijter/mailer-bundle
+[link-scrutinizer]: https://scrutinizer-ci.com/g/johanderuijter/mailer-bundle/code-structure
+[link-code-quality]: https://scrutinizer-ci.com/g/johanderuijter/mailer-bundle
 [link-downloads]: https://packagist.org/packages/jdr/mailer-bundle
 [link-author]: https://github.com/johanderuijter
 [link-contributors]: ../../contributors
