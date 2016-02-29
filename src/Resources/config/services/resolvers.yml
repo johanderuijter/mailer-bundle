@@ -1,34 +1,41 @@
+parameters:
+    jdr.mailer.resolver.recipients.class: JDR\Mailer\Part\RecipientsResolver
+    jdr.mailer.resolver.sender.class: JDR\Mailer\Part\SenderResolver
+    jdr.mailer.resolver.subject.class: JDR\Mailer\Part\SubjectResolver
+    jdr.mailer.resolver.message.class: JDR\Mailer\Part\MessageResolver
+    jdr.mailer.resolver.template.class: JDR\Mailer\Part\TemplateResolver
+
 services:
     jdr.mailer.resolver.recipients:
-        class: JDR\Mailer\Part\RecipientsResolver
+        class: "%jdr.mailer.resolver.recipients.class%"
         private: true
         lazy: true
         tags:
             - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Recipients }
 
     jdr.mailer.resolver.sender:
-        class: JDR\Mailer\Part\SenderResolver
+        class: "%jdr.mailer.resolver.sender.class%"
         private: true
         lazy: true
         tags:
             - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Sender }
 
     jdr.mailer.resolver.subject:
-        class: JDR\Mailer\Part\SubjectResolver
+        class: "%jdr.mailer.resolver.subject.class%"
         private: true
         lazy: true
         tags:
             - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Subject }
 
     jdr.mailer.resolver.message:
-        class: JDR\Mailer\Part\MessageResolver
+        class: "%jdr.mailer.resolver.message.class%"
         private: true
         lazy: true
         tags:
             - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Message }
 
     jdr.mailer.resolver.template:
-        class: JDR\Mailer\Part\TemplateResolver
+        class: "%jdr.mailer.resolver.template.class%"
         private: true
         lazy: true
         arguments:
