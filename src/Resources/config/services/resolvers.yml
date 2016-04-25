@@ -1,6 +1,8 @@
 parameters:
     jdr.mailer.resolver.recipients.class: JDR\Mailer\Part\RecipientsResolver
+    jdr.mailer.resolver.from.class: JDR\Mailer\Part\FromResolver
     jdr.mailer.resolver.sender.class: JDR\Mailer\Part\SenderResolver
+    jdr.mailer.resolver.bounce.class: JDR\Mailer\Part\BounceResolver
     jdr.mailer.resolver.subject.class: JDR\Mailer\Part\SubjectResolver
     jdr.mailer.resolver.message.class: JDR\Mailer\Part\MessageResolver
     jdr.mailer.resolver.template.class: JDR\Mailer\Part\TemplateResolver
@@ -13,12 +15,26 @@ services:
         tags:
             - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Recipients }
 
+    jdr.mailer.resolver.from:
+        class: "%jdr.mailer.resolver.from.class%"
+        private: true
+        lazy: true
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\From }
+
     jdr.mailer.resolver.sender:
         class: "%jdr.mailer.resolver.sender.class%"
         private: true
         lazy: true
         tags:
             - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Sender }
+
+    jdr.mailer.resolver.bounce:
+        class: "%jdr.mailer.resolver.bounce.class%"
+        private: true
+        lazy: true
+        tags:
+            - { name: jdr.mailer.resolver, part: JDR\Mailer\Part\Bounce }
 
     jdr.mailer.resolver.subject:
         class: "%jdr.mailer.resolver.subject.class%"
