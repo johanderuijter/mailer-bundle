@@ -12,17 +12,17 @@ services:
 
     jdr.mailer.part_resolver_registry:
         class: "%jdr.mailer.part_resolver_registry.class%"
-        private: true
+        public: false
 
     jdr.mailer.email_builder:
         class: "%jdr.mailer.email_builder.class%"
-        private: true
+        public: false
         arguments:
             - "@jdr.mailer.part_resolver_registry"
 
     jdr.mailer.swift:
         class: "%jdr.mailer.swift.class%"
-        private: true
+        public: false
         arguments:
             - "@mailer"
             - "@jdr.mailer.email_builder"
