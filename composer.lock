@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b96286648b46d0219ab0c5fb6b7d802b",
+    "content-hash": "e74801143c26469a63f24c8ff34e0e60",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -524,16 +524,16 @@
         },
         {
             "name": "jdr/mailer-swift-mailer-bridge",
-            "version": "0.1.0",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johanderuijter/mailer-swift-mailer-bridge.git",
-                "reference": "98fdb7a0e704e0d96f79e0753edf753ae180ae8d"
+                "reference": "be7acf4b6f3f2e448546835038f98fdef9fc2889"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johanderuijter/mailer-swift-mailer-bridge/zipball/98fdb7a0e704e0d96f79e0753edf753ae180ae8d",
-                "reference": "98fdb7a0e704e0d96f79e0753edf753ae180ae8d",
+                "url": "https://api.github.com/repos/johanderuijter/mailer-swift-mailer-bridge/zipball/be7acf4b6f3f2e448546835038f98fdef9fc2889",
+                "reference": "be7acf4b6f3f2e448546835038f98fdef9fc2889",
                 "shasum": ""
             },
             "require": {
@@ -575,7 +575,7 @@
                 "jdr",
                 "mailer-swift-mailer-bridge"
             ],
-            "time": "2017-12-09T13:24:48+00:00"
+            "time": "2017-12-09T22:41:38+00:00"
         },
         {
             "name": "paragonie/random_compat",
